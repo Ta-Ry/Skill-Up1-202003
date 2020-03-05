@@ -341,39 +341,31 @@ footer
 
 
 	.menu-box {
-		position: relative;
 		width: 40px;
 		height: 40px;
 		float: right;
 		border: 1px solid #FAFAFA;
 		margin-top: 5px;
 		margin-bottom: 5px;
+		margin-right: 5%;
 	}
 
-	.menu-box span {
-		position: absolute;
-		left: 0;
-		width: 100%;
-		height: 4px;
-		background-color: #000;
-		border-radius: 4px;
+	.list-bar
+	{
+		width: 25px;
+		height: 2px;
+		background-color: #FAFAFA;
+		display: block;
+		margin: 5px auto;
 	}
 
-	.menu-box span:nth-of-type(1) {
-		top: 0;
-	}
-
-	.menu-box span:nth-of-type(2) {
-		top: 20px;
-	}
-
-	.menu-box span:nth-of-type(3) {
-		bottom: 0;
+	.list-bar:nth-of-type(1) {
+		margin-top: 10px;
 	}
 
 	#mv
 	{
-		background-image: url(img/mv.png);
+		background-image: url(img/code.png);
 		background-size: cover;
 		background-position: center;
 		width: 100%;
@@ -383,14 +375,14 @@ footer
 	.mv-title
 	{
 		color: #FAFAFA;
-		font-size: 64px;
+		font-size: 40px;
 		padding-top: 200px;
 		padding-bottom: 10px;
 	}
 	.mv-text
 	{
 		color: #FAFAFA;
-		font-size: 20px;
+		font-size: 18px;
 	}
 
 	#portfolio
@@ -413,16 +405,22 @@ footer
 		background-color: #EC715F;
 		margin: 8px auto 0 auto;
 	}
+	.sp-none
+	{
+		display: none;
+	}
 	.text
 	{
 		font-size: 16px;
 		color: #000000;
 		padding-top: 30px;
 		text-align: center;
+		width: 90%;
+		margin: 0 auto;
 	}
 	.pf-boxes
 	{
-		width: 920px;
+		width: 90%;
 		margin: 0 auto;
 		padding-top: 30px;
 		padding-bottom: 90px;
@@ -431,24 +429,21 @@ footer
 	{
 		width: 300px;
 		height: 250px;
-		float: left;
-		margin-right: 10px;
-		margin-top: 10px;
+		float: none;
+		margin: 0 auto;
+		margin-bottom: 10px;
 		background-size: cover;
 		background-position: center;
 	}
 
-	.box:nth-child(-n+3)
+	.box:last-child
 	{
-		margin-top: 0px;
-	}
-	.box:nth-child(3n)
-	{
-		margin-right: 0px;
+		margin: 0 auto;
+		margin-bottom: 0px;
 	}
 	.box1
 	{
-		background-image: url(img/sketch.jpg);
+		display: none;
 	}
 	.box2
 	{
@@ -456,7 +451,7 @@ footer
 	}
 	.box3
 	{
-		background-image: url(img/write.jpg);
+		display: none;
 	}
 	.box4
 	{
@@ -464,7 +459,7 @@ footer
 	}
 	.box5
 	{
-		background-image: url(img/talk.jpg);
+		display: none;
 	}
 	.box6
 	{
@@ -474,7 +469,7 @@ footer
 
 	.strength-boxes
 	{
-		width: 980px;
+		width: 90%;
 		margin: 0 auto;
 		padding-top: 30px;
 		padding-bottom: 90px;
@@ -483,13 +478,18 @@ footer
 	{
 		width: 320px;
 		height: auto;
-		margin-right: 10px;
-		float: left;
+		float: none;
 		text-align: center;
+		margin: 0 auto;
+		margin-top: 10px;
 	}
-	.strength:nth-child(3n)
+	.strength:first-child
 	{
-		margin-right: 0px;
+		margin-top: 0px;
+	}
+	.strength:last-child
+	{
+		margin-right: auto;
 	}
 	i
 	{
@@ -529,14 +529,16 @@ footer
 	}
 	.profile-boxes
 	{
-		width: 1024px;
+		width: 90%;
 		padding-top: 30px;
 		padding-bottom: 90px;
+		margin: 0 auto;
 	}
 	.left-container
 	{
-		width: 50%;
-		float: left;
+		width: 90%;
+		float: none;
+		margin: 0 auto;
 	}
 	.profile-img
 	{
@@ -548,29 +550,28 @@ footer
 	}
 	.right-container
 	{
-		width: 50%;
-		float: right;
+		width: 90%;
+		float: none;
+		margin: 0 auto;
 	}
 	.m-title
 	{
 		color: #000000;
 		font-size: 20px;
+		margin-top: 20px;
 		margin-bottom: 5px;
+		text-align: center;
 	}
 	.m-text
 	{
 		color: #000000;
 		font-size: 16px;
-		margin-bottom: 20px;
-	}
-	.m-text:last-child
-	{
-		margin-bottom: 0px;
+		text-align: center;
 	}
 
 	.contact-boxes
 	{
-		width: 800px;
+		width: 90%;
 		padding-top: 30px;
 		padding-bottom: 90px;
 		margin: 0 auto;
@@ -578,7 +579,8 @@ footer
 	.c-left-container
 	{
 		width: 50%;
-		float: left;
+		float: none;
+		margin: 0 auto;
 	}
 	.c-left-container-content
 	{
@@ -593,22 +595,24 @@ footer
 	.c-right-container
 	{
 		width: 50%;
-		float: right;
+		float: none;
+		margin: 0 auto;
 	}
 	.c-right-container-content
 	{
 		margin: 0 auto;
-		width: 190px;
+		width: 100%;
+		text-align: center;
 	}
 	.fa-facebook-f
 	{
 		font-size: 50px;
-		margin-right: 20px;
+		margin-right: 8px;
 	}
 	.fa-twitter
 	{
 		font-size: 50px;
-		margin-right: 20px;
+		margin-right: 8px;
 	}
 	.fa-instagram
 	{
